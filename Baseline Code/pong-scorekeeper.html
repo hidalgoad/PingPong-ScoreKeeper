@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="pong-scorekeeper.css" />
+    <title>ScoreKeeper</title>
+  </head>
+  <body>
+    <section class="columns section" id="main-sec">
+      <div class="card column is-half" id="main-container">
+        <div class="card-image">
+          <figure class="image is-5by4">
+            <img
+              src="https://st2.depositphotos.com/4431055/11855/i/600/depositphotos_118559020-stock-photo-professional-ping-pong-rockets.jpg"
+              alt="Ping Pong"
+            />
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Ping Pong Score Keeper</p>
+        </header>
+        <div class="card-content" id="main-content">
+          <div class="content">
+            <h2 class="title is-2">
+              <span id="P1DOMScore">0</span> - <span id="P2DOMScore">0</span>
+            </h2>
+            Use the buttons below to add score to each player.
+            <div>
+              <label for="scoreInput">Please enter the score limit: </label>
+            </div>
+            <input
+              type="number"
+              name="scoreInput"
+              class="input is-rounded is-small"
+              id="scoreLimitInput"
+            />
+          </div>
+          <div id="initial-score">Please enter a winning score</div>
+        </div>
+        <footer class="card-footer">
+          <button class="button is-fullwidth is-primary" id="P1DOMButton">
+            +1 Player One
+          </button>
+          <button class="button is-fullwidth is-danger" id="resetButton">
+            Reset
+          </button>
+          <button class="button is-fullwidth is-link" id="P2DOMButton">
+            +1 Player Two
+          </button>
+        </footer>
+      </div>
+    </section>
+    <script src="pong-scorekeeper.js"></script>
+  </body>
+</html>
